@@ -15,9 +15,9 @@ from timm.layers import set_layer_config
 from timm.models._factory import parse_model_name
 from timm.models._helpers import load_state_dict, remap_state_dict
 from timm.models._hub import load_model_config_from_hf
-from timm.models._pretrained import PretrainedCfg, split_model_name_tag
+from timm.models._pretrained import PretrainedCfg
 from timm.models._registry import is_model, model_entrypoint
-
+from timm.models._factory import split_model_name_tag
 
 def load_checkpoint(
     model, checkpoint_path, use_ema=True, strict=True, remap=False, filter_keys=None, state_dict_map=None
